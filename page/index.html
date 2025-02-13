@@ -3,8 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Watchfaces</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(22, 22, 22);
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 45px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .column {
+            flex: 1;
+            text-align: left;
+        }
+
+        .right {
+            margin-left: auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -29,108 +96,140 @@
 
         <div class="container">
             <div class="item">
-                <a href="pages/page1.html">
-                    <img src="images/1.gif" alt="Floating Geometry">
-                </a>
-                <p>Floating Geometry</p>
-            </div>
-            <div class="item">
-                <a href="pages/page2.html">
-                    <img src="images/2.gif" alt="Scratch Card">
-                </a>
-                <p>Scratch Card</p>
-            </div>
-            <div class="item">
-                <a href="pages/page3.html">
-                    <img src="images/3.gif" alt="Zeitfluss">
-                </a>
-                <p>Zeitfluss</p>
-            </div>
-            <div class="item">
-                <a href="pages/page4.html">
-                    <img src="images/4.gif" alt="Bubbles">
-                </a>
-                <p>Bubbles</p>
-            </div>
-            <div class="item">
-                <a href="pages/page5.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/5.New_Time/index.html" class="gif-link">
                     <img src="images/5.gif" alt="New Time">
                 </a>
                 <p>New Time</p>
             </div>
             <div class="item">
-                <a href="pages/page6.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/6.Ball_Fall/index.html" class="gif-link">
                     <img src="images/6.gif" alt="Ball Fall">
                 </a>
                 <p>Ball Fall</p>
             </div>
             <div class="item">
-                <a href="pages/page7.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/7.Bubble_Trouble/index.html" class="gif-link">
                     <img src="images/7.gif" alt="Bubble Trouble">
                 </a>
                 <p>Bubble Trouble</p>
             </div>
             <div class="item">
-                <a href="pages/page8.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/1.Floating_Geometry/index.html" class="gif-link">
+                    <img src="images/1.gif" alt="Floating Geometry">
+                </a>
+                <p>Floating Geometry</p>
+            </div>
+            <div class="item">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/2.Scratch_Card/index.html" class="gif-link">
+                    <img src="images/2.gif" alt="Scratch Card">
+                </a>
+                <p>Scratch Card</p>
+            </div>
+            <div class="item">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/3.Zeitfluss/index.html" class="gif-link">
+                    <img src="images/3.gif" alt="Zeitfluss">
+                </a>
+                <p>Zeitfluss</p>
+            </div>
+            <div class="item">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/4.Bubbles/index.html" class="gif-link">
+                    <img src="images/4.gif" alt="Bubbles">
+                </a>
+                <p>Bubbles</p>
+            </div>
+            <div class="item">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/8.Blubberblasen/index.html" class="gif-link">
                     <img src="images/8.gif" alt="Blubberblasen">
                 </a>
                 <p>Blubberblasen</p>
             </div>
             <div class="item">
-                <a href="pages/page9.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/9.%E2%81%A0K%C3%A4se/index.html" class="gif-link">
                     <img src="images/9.gif" alt="⁠Käse">
                 </a>
                 <p>⁠Käse</p>
             </div>
             <div class="item">
-                <a href="pages/page10.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/10.%E2%81%A0B%C3%A4llebad/index.html" class="gif-link">
                     <img src="images/10.gif" alt="⁠Bällebad">
                 </a>
                 <p>⁠Bällebad</p>
             </div>
             <div class="item">
-                <a href="pages/page11.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/11.%E2%81%A0Zeigermodell/index.html" class="gif-link">
                     <img src="images/11.gif" alt="⁠Zeigermodell">
                 </a>
                 <p>⁠Zeigermodell</p>
             </div>
             <div class="item">
-                <a href="pages/page12.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/12.Waves/index.html" class="gif-link">
                     <img src="images/12.gif" alt="Waves">
                 </a>
                 <p>Waves</p>
             </div>
             <div class="item">
-                <a href="pages/page13.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/13.Web/index.html" class="gif-link">
                     <img src="images/13.gif" alt="Web">
                 </a>
                 <p>Web</p>
             </div>
             <div class="item">
-                <a href="pages/page14.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/14.Segments_Clock/index.html" class="gif-link">
                     <img src="images/14.gif" alt="Segments Clock">
                 </a>
                 <p>Segments Clock</p>
             </div>
             <div class="item">
-                <a href="pages/page15.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/15.Free_Palestine/index.html" class="gif-link">
                     <img src="images/15.gif" alt="Free Palestine">
                 </a>
                 <p>Free Palestine</p>
             </div>
             <div class="item">
-                <a href="pages/page16.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/16.Magnet_Flowers/index.html" class="gif-link">
                     <img src="images/16.gif" alt="Magnet Flowers">
                 </a>
                 <p>Magnet Flowers</p>
             </div>
             <div class="item">
-                <a href="pages/page17.html">
+                <a href="https://yingxunli.github.io/WatchFaces_UX/17.Reversed_Falling/index.html" class="gif-link">
                     <img src="images/17.gif" alt="Reversed Falling">
                 </a>
                 <p>Reversed Falling</p>
             </div>
         </div>
     </div>
+
+    <script>
+        // 获取所有 GIF 链接
+        const gifLinks = document.querySelectorAll('.gif-link');
+        const links = Array.from(gifLinks).map(link => link.href); // 提取所有链接
+        let currentIndex = 0;
+
+        // 为每个链接添加点击事件
+        gifLinks.forEach((link, index) => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // 阻止默认跳转行为
+                currentIndex = index; // 记录当前点击的索引
+                window.location.href = links[currentIndex]; // 跳转到对应链接
+
+                // 20 秒后跳转到下一个链接
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % links.length; // 循环到下一个链接
+                    window.location.href = links[currentIndex]; // 跳转到下一个链接
+                }, 20000); // 20 秒
+            });
+        });
+
+        // 如果直接进入某个链接页面，20 秒后自动跳转到下一个链接
+        const currentUrl = window.location.href;
+        if (links.includes(currentUrl)) {
+            currentIndex = links.indexOf(currentUrl);
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % links.length;
+                window.location.href = links[currentIndex];
+            }, 20000); // 20 秒
+        }
+    </script>
 </body>
 </html>
