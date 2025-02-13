@@ -20,19 +20,35 @@ const webPages = [
   ];
   
   let currentIndex = 0;
-  const iframe = document.getElementById("webFrame");
-  
-  // 切换到下一个网页
-  function showNextPage() {
-    // 更新 iframe 的 src 属性
-    iframe.src = webPages[currentIndex];
-  
-    // 更新索引
-    currentIndex = (currentIndex + 1) % webPages.length;
-  }
-  
-  // 初始加载第一个网页
-  showNextPage();
-  
-  // 每分钟切换一次网页
-  setInterval(showNextPage, 60000); // 60000 毫秒 = 1 分钟
+const iframe = document.getElementById("webFrame");
+const pageIndicator = document.getElementById("pageIndicator");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+
+// 更新 iframe 和页面序号
+function updatePage() {
+  iframe.src = webPages[currentIndex];
+  pageIndicator.textContent = `${currentIndex + 1} / ${webPages.length}`;
+}
+
+// 切换到上一页
+function showPrevPage() {
+  currentIndex = (currentIndex - 1 + webPages.length) % webPages.length;
+  updatePage();
+}
+
+// 切换到下一页
+function showNextPage() {
+  currentIndex = (currentIndex + 1) % webPages.length;
+  updatePage();
+}
+
+// 初始加载第一个网页
+updatePage();
+
+// 每分钟自动切换到下一页
+setInterval(showNextPage, 60000); // 60000 毫秒 = 1 分钟
+
+// 绑定按钮事件
+prevButton.addEventListener("click", showPrevPage);
+nextButton.addEventListener("click", showNextPage);

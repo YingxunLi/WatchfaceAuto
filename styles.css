@@ -1,42 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  body, html {
-    width: 900px;
-    height: 900px;
-    border-radius: 10px;
-    overflow: hidden;
-    /* background-color: rgb(240, 240, 240); */
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* 将背景颜色移到 body 或 html 上 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-  }
-  
-  .slider {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;    
-  }
-  
-  .slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 确保图片适应屏幕 */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .slider img.active {
-    opacity: 1;
-  }
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 确保图片适应屏幕 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
