@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF 轮播</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 引入 CSS 文件 -->
+</head>
+<body>
+  <div class="slider">
+    <!-- 动态加载 GIF 图片 -->
+    <img src="1.gif" class="active" alt="GIF 1">
+    <img src="2.gif" alt="GIF 2">
+    <img src="3.gif" alt="GIF 3">
+    <img src="4.gif" alt="GIF 4">
+    <img src="5.gif" alt="GIF 5">
+    <img src="6.gif" alt="GIF 6">
+    <img src="7.gif" alt="GIF 7">
+    <img src="8.gif" alt="GIF 8">
+    <img src="9.gif" alt="GIF 9">
+    <img src="10.gif" alt="GIF 10">
+    <img src="11.gif" alt="GIF 11">
+    <img src="12.gif" alt="GIF 12">
+  </div>
+
+  <script src="script.js"></script> <!-- 引入 JavaScript 文件 -->
+</body>
+</html>

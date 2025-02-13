@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片适应屏幕 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
