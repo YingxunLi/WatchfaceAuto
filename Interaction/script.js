@@ -46,7 +46,7 @@ function showNextPage() {
 updatePage();
 
 // 每分钟自动切换到下一页
-setInterval(showNextPage, 12000); // 60000 毫秒 = 1 分钟
+setInterval(showNextPage, 20000); // 60000 毫秒 = 1 分钟
 
 // 绑定按钮事件
 prevButton.addEventListener("click", showPrevPage);
