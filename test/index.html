@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>网页轮播</title>
-  <link rel="stylesheet" href="styles.css"> <!-- 引入 CSS 文件 -->
+  <title>Watchfaces</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- 显示当前网页序号 -->
+  <div id="pageIndicator">1 / 17</div>
+
   <!-- iframe 用于嵌入网页 -->
   <iframe id="webFrame" src="" frameborder="0"></iframe>
 
+  <!-- 添加上一页和下一页按钮 -->
   <div id="controls">
-    <button id="prevButton">Zurück</button> <!-- 德语：上一页 -->
-    <button id="nextButton">Weiter</button> <!-- 德语：下一页 -->
+    <button id="prevButton">Zurück</button>
+    <button id="nextButton">Weiter</button>
   </div>
-  
-  <script src="script.js"></script> <!-- 引入 JavaScript 文件 -->
+
+  <script src="script.js"></script>
 </body>
 </html>

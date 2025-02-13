@@ -1,4 +1,3 @@
-// 网页 URL 列表
 const webPages = [
     "https://yingxunli.github.io/WatchFaces_UX/5.New_Time/index.html",
     "https://yingxunli.github.io/WatchFaces_UX/6.Ball_Fall/index.html",
