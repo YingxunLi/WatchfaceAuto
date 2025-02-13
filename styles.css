@@ -7,7 +7,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  background-color: #333; /* 将背景颜色移到 body 或 html 上 */
+  background-color: #333; /* 背景颜色 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,22 +24,19 @@ body, html {
 }
 
 .slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 确保图片适应屏幕 */
+  max-width: 80%; /* 控制GIF的最大宽度 */
+  max-height: 80%; /* 控制GIF的最大高度 */
+  width: auto; /* 保持原始宽度比例 */
+  height: auto; /* 保持原始高度比例 */
+  object-fit: contain; /* 确保GIF适应容器而不变形 */
   position: absolute;
-  /* top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out; */
-  position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 居中显示 */
+  opacity: 0; /* 默认隐藏 */
+  transition: opacity 1s ease-in-out; /* 添加过渡效果 */
 }
 
 .slider img.active {
-  opacity: 1;
+  opacity: 1; /* 显示当前活动的GIF */
 }
-
-
