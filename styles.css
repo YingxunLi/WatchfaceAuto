@@ -2,18 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #333;
+
   }
   
   body, html {
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 900px;
+    border-radius: 10px;
     overflow: hidden;
+    /* background-color: rgb(240, 240, 240); */
+
   }
   
   .slider {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;    
   }
   
   .slider img {
@@ -22,7 +31,7 @@
     object-fit: cover; /* 确保图片适应屏幕 */
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -30,3 +39,4 @@
   .slider img.active {
     opacity: 1;
   }
+
